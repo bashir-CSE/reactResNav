@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 10vh;
+  background-color: coral;
+  padding: 0 2rem;
+}
+
+nav .menuIcon {
+  display: none;
+}
+
+nav .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .link li {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+nav .link li .selected {
+  color: black !important;
+  background-color: white;
+}
+
+nav .link li:last-child {
+  margin-right: 0px;
+}
+
+nav .link li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  padding: 10px;
+}
+
+nav .link li a:hover {
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  nav .menuIcon {
+    display: block;
+  }
+  nav .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 10vh;
+    background-color: teal;
+    right: 0px;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    height: 50vh;
+    width: 100%;
+    gap: 3rem;
+    padding-top: 1rem;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  nav .close {
+    -webkit-transform: translateX(0%) !important;
+            transform: translateX(0%) !important;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+}
+/*# sourceMappingURL=App.css.map */
